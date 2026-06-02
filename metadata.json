@@ -1,0 +1,6 @@
+{
+  "name": "Bouldering Agent Presentation",
+  "description": "A scrollable, bouldering-themed presentation app to share takeaways on building a Smart Attribution Agent, spanning difficulties from V0 to V10.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
