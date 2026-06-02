@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: process.env.GITHUB_REPOSITORY ? `/${process.env.GITHUB_REPOSITORY.split('/')[1]}/` : '/', // Dynamically set base for GitHub pages or local
+    base: './', // Use relative paths to make static assets load anywhere
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
