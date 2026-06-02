@@ -204,7 +204,7 @@ export const ClimbingWall = ({ currentIndex }: { currentIndex: number }) => {
   }, []);
 
   const currentPose = poses[Math.min(climbStep, poses.length - 1)];
-  const motionConfig = { type: 'tween', duration: 0.6, ease: [0.4, 0.0, 0.2, 1] };
+  const motionConfig = { type: 'tween' as const, duration: 0.6, ease: [0.4, 0.0, 0.2, 1] as [number, number, number, number] };
   const groupY = -(currentPose.body.y - VIEW_H/2);
 
   const drawLimb = (p1: {x:number, y:number}, p2: {x:number, y:number}, p3: {x:number, y:number}, width: number, shoeRot?: number) => (
